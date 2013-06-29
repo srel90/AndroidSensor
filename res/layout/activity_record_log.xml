@@ -20,7 +20,7 @@
         android:paddingBottom="20dp"
         android:text="Accelerometer"
         android:textColor="#ffffff"
-        android:textSize="36sp"
+        android:textSize="48sp"
         tools:ignore="HardcodedText" />
 
     <LinearLayout
@@ -39,7 +39,7 @@
             android:padding="10dp"
             android:text="X:"
             android:textColor="#ffffff"
-            android:textSize="16sp"
+            android:textSize="24sp"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -50,7 +50,7 @@
             android:padding="10dp"
             android:text="Y:"
             android:textColor="#ffffff"
-            android:textSize="16sp"
+            android:textSize="24sp"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -61,7 +61,7 @@
             android:padding="10dp"
             android:text="Z:"
             android:textColor="#ffffff"
-            android:textSize="16sp"
+            android:textSize="24sp"
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
@@ -79,7 +79,7 @@
             android:paddingBottom="20dp"
             android:text="Gyroscope"
             android:textColor="#ffffff"
-            android:textSize="36sp"
+            android:textSize="48sp"
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
@@ -99,7 +99,7 @@
             android:padding="10dp"
             android:text="X:"
             android:textColor="#ffffff"
-            android:textSize="16sp"
+            android:textSize="24sp"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -110,7 +110,7 @@
             android:padding="10dp"
             android:text="Y:"
             android:textColor="#ffffff"
-            android:textSize="16sp"
+            android:textSize="24sp"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -121,14 +121,14 @@
             android:padding="10dp"
             android:text="Z:"
             android:textColor="#ffffff"
-            android:textSize="16sp"
+            android:textSize="24sp"
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <FrameLayout
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical" android:layout_gravity="center">
 
         <Button
             android:id="@+id/btnback"
@@ -137,7 +137,7 @@
             android:layout_gravity="bottom|center"
             android:text="Back to main menu"
             android:textColor="#ffffff"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText" android:textSize="24sp"/>
 
         <ToggleButton
             android:id="@+id/btnstartstop"
@@ -147,8 +147,8 @@
             android:textColor="#ffffff"
             android:textOff="Start record"
             android:textOn="Stop record"
-            android:textSize="16sp"
-            tools:ignore="HardcodedText" />
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" android:gravity="center"/>
     </FrameLayout>
 
 </LinearLayout>

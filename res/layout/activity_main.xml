@@ -20,7 +20,7 @@
         android:paddingBottom="20dp"
         android:text="Android Sensor"
         android:textColor="#ffffff"
-        android:textSize="36sp"
+        android:textSize="48sp"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -30,7 +30,7 @@
         android:layout_gravity="center"
         android:text="ACCELEROMETER"
         android:textColor="#ffffff"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText" android:textSize="24sp"/>
 
     <Button
         android:id="@+id/btnGyroscope"
@@ -39,7 +39,7 @@
         android:layout_gravity="center"
         android:text="GYROSCOPE"
         android:textColor="#ffffff"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText" android:textSize="24sp"/>
 
     <Button
         android:id="@+id/btnrecordlog"
@@ -48,7 +48,7 @@
         android:layout_gravity="center"
         android:text="RECORD SENSOR LOG"
         android:textColor="#ffffff"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText" android:textSize="24sp"/>
 
     <Button
         android:id="@+id/btnSetting"
@@ -57,7 +57,7 @@
         android:layout_gravity="center"
         android:text="SETTING"
         android:textColor="#ffffff"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText" android:textSize="24sp"/>
 
     <FrameLayout
         android:layout_width="match_parent"

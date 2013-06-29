@@ -18,7 +18,7 @@
         android:paddingBottom="20dp"
         android:text="Gyroscope"
         android:textColor="#ffffff"
-        android:textSize="36sp"
+        android:textSize="48sp"
         tools:ignore="HardcodedText" />
 
     <LinearLayout
@@ -36,7 +36,7 @@
             android:padding="10dp"
             android:text="X:"
             android:textColor="#ffffff"
-            android:textSize="16sp"
+            android:textSize="24sp"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -47,7 +47,7 @@
             android:padding="10dp"
             android:text="Y:"
             android:textColor="#ffffff"
-            android:textSize="16sp"
+            android:textSize="24sp"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -58,7 +58,7 @@
             android:padding="10dp"
             android:text="Z:"
             android:textColor="#ffffff"
-            android:textSize="16sp"
+            android:textSize="24sp"
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
@@ -82,7 +82,7 @@
             android:layout_gravity="bottom|center"
             android:text="Back to main menu"
             android:textColor="#ffffff"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText" android:textSize="24sp"/>
     </FrameLayout>
 
 </TableLayout>
