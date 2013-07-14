@@ -10,8 +10,7 @@ import android.os.Environment;
 public class Config {
 
 	private Properties configuration;
-	private String configurationFile = Environment
-			.getExternalStorageDirectory() + "/AndroidSensor/config.properties";
+	private String configurationFile = Environment.getExternalStorageDirectory() + "/AndroidSensor/config.properties";
 
 	public Config() {
 		configuration = new Properties();

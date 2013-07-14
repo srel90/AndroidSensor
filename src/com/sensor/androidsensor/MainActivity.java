@@ -20,8 +20,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_main);
 		File appname = new File(Environment.getExternalStorageDirectory()+"/AndroidSensor");
         if(!appname.exists()){
@@ -39,54 +38,66 @@ public class MainActivity extends Activity {
 				e.printStackTrace();
 			}
         }		
-		((Button) findViewById(R.id.btnAccelerometer)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				new Handler().postDelayed(new Runnable() {
-					public void run() {
-						Intent newActivity = new Intent(MainActivity.this,
-								AccelerometerActivity.class);
-						startActivity(newActivity);
-						finish();
-					}
-				}, 100);
-			}
-		});
-		((Button) findViewById(R.id.btnGyroscope)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				new Handler().postDelayed(new Runnable() {
-					public void run() {
-						Intent newActivity = new Intent(MainActivity.this,
-								GyroscopeActivity.class);
-						startActivity(newActivity);
-						finish();
-					}
-				}, 100);
-			}
-		});
-		((Button) findViewById(R.id.btnrecordlog)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				new Handler().postDelayed(new Runnable() {
-					public void run() {
-						Intent newActivity = new Intent(MainActivity.this,
-								RecordLogActivity.class);
-						startActivity(newActivity);
-						finish();
-					}
-				}, 100);
-			}
-		});
-		((Button) findViewById(R.id.btnSetting)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				new Handler().postDelayed(new Runnable() {
-					public void run() {
-						Intent newActivity = new Intent(MainActivity.this,
-								SettingActivity.class);
-						startActivity(newActivity);
-						finish();
-					}
-				}, 100);
-			}
-		});
+		findViewById(R.id.btnAccelerometer).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        Intent newActivity = new Intent(MainActivity.this,
+                                AccelerometerActivity.class);
+                        startActivity(newActivity);
+                        finish();
+                    }
+                }, 100);
+            }
+        });
+		findViewById(R.id.btnGyroscope).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        Intent newActivity = new Intent(MainActivity.this,
+                                GyroscopeActivity.class);
+                        startActivity(newActivity);
+                        finish();
+                    }
+                }, 100);
+            }
+        });
+		findViewById(R.id.btnrecordlog).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        Intent newActivity = new Intent(MainActivity.this,
+                                RecordLogActivity.class);
+                        startActivity(newActivity);
+                        finish();
+                    }
+                }, 100);
+            }
+        });
+		findViewById(R.id.btnSetting).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        Intent newActivity = new Intent(MainActivity.this,
+                                SettingActivity.class);
+                        startActivity(newActivity);
+                        finish();
+                    }
+                }, 100);
+            }
+        });
+        findViewById(R.id.btnabout).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        Intent newActivity = new Intent(MainActivity.this,
+                                AboutActivity.class);
+                        startActivity(newActivity);
+                        finish();
+                    }
+                }, 100);
+            }
+        });
 	}
 
 	@Override

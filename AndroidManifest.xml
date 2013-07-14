@@ -41,6 +41,7 @@
             android:name="com.sensor.androidsensor.RecordLogActivity"
             android:label="@string/title_activity_record_log" >
         </activity>
+        <activity android:name=".AboutActivity"/>
     </application>
 
 </manifest>

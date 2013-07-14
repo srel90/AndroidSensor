@@ -59,6 +59,9 @@
         android:textColor="#ffffff"
         tools:ignore="HardcodedText" android:textSize="24sp"/>
 
+    <Button tools:ignore="HardcodedText" android:id="@+id/btnabout" android:layout_width="300dp"
+            android:layout_height="wrap_content" android:layout_gravity="center" android:text="ABOUT"
+            android:textColor="#ffffff" android:textSize="24sp"/>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
