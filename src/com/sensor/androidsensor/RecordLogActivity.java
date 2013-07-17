@@ -13,6 +13,8 @@ import java.util.Locale;
 //import org.openintents.sensorsimulator.hardware.SensorEventListener;
 //import org.openintents.sensorsimulator.hardware.SensorManagerSimulator;
 
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -49,7 +51,7 @@ public class RecordLogActivity extends Activity implements SensorEventListener {
 	private String path, root, currentDate;
 	private Config config;
 	private Time currentTime;
-
+    Drawable d ; //ประกาศตัวแปรสำหรับเก็บค่าพื้นหลังชองปุ่ม
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -107,6 +109,8 @@ public class RecordLogActivity extends Activity implements SensorEventListener {
 						}, 100);
 					}
 				});
+        //เก็บค่าพื้นหลังของปุ่มก่อนการกด
+        d = ((ToggleButton) findViewById(R.id.btnstartstop)).getBackground();
 		((ToggleButton) findViewById(R.id.btnstartstop))
 				.setOnClickListener(new OnClickListener() {
 					public void onClick(View v) {
@@ -120,14 +124,18 @@ public class RecordLogActivity extends Activity implements SensorEventListener {
 						        	dir.mkdir();
 						        }
 							if (!clicked) {
-								
+
 								bw = new BufferedWriter(new FileWriter(root + currentDate
 										+ ".csv", true));
 								clicked = true;
+                                //เมื่อกดปุ่มแล้วเปลี่ยนเป็นสีแดง
+                                ((ToggleButton)findViewById(R.id.btnstartstop)).setBackgroundColor(Color.rgb(255,0,0));
 							} else {
 								bw.flush();
 								bw.close();
 								clicked = false;
+                                //กดอีกครั้งกลับเป็นสีเดิม
+                                ((ToggleButton)findViewById(R.id.btnstartstop)).setBackgroundDrawable(d);
 							}
 						} catch (IOException e) {
 							e.printStackTrace();
